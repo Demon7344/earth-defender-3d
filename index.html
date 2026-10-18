@@ -451,7 +451,7 @@ function update(dt){
   if(S.state!=='pause'){
     earth.rotation.y+=0.03*dt; clouds.rotation.y+=0.042*dt;
     S.hitFlash=Math.max(0,S.hitFlash-dt*1.8); rimMat.uniforms.hit.value=S.hitFlash;
-    earthMat.emissive.setRGB(S.hitFlash*.16,S.hitFlash*.02,0);
+    earthMat.emissive.setRGB(S.hitFlash*.06,S.hitFlash*.008,0);
   }
   if(S.state==='pause') return;
 
